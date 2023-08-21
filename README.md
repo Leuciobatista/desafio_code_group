@@ -31,7 +31,7 @@ PostgreSQL: Certifique-se de ter o PostgreSQL instalado e configurado.<br>
 <h2>Passos para Configuração</h2>
 
 Clone o Repositório
-git clone https://github.com/Leuciobatista/proj.git
+git clone https://github.com/Leuciobatista/desafio_code_group.git
 cd proj
 Configuração do Banco de Dados
 Configure a conexão do banco de dados em src/main/resources/application.properties:
@@ -40,11 +40,12 @@ Configure a conexão do banco de dados em src/main/resources/application.propert
 Execução
 Utilizando o Maven, você pode executar o projeto com o seguinte comando:
 
-./mvnw spring-boot:run
+./mvnw spring-boot:run<br>
 O servidor estará disponível em http://localhost:8080.
 
-<h2>Documentação da API</h2>
+<h2>Documentação da API</h2><br>
 http://localhost:8080/swagger-ui/index.html
 
-Licença
+
+<h2>Licença</h2>
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter detalhes.
