@@ -1,0 +1,69 @@
+### PROJETOS
+
+### Recuperar todos os projetos
+GET http://localhost:8080/projetos
+Content-Type: application/json
+
+### Recuperar um projeto por id
+GET http://localhost:8080/projetos/1
+Content-Type: application/json
+
+### Criar um projeto
+POST http://localhost:8080/projetos
+Content-Type: application/json
+
+{
+  "nome": "Projeto 2",
+  "dataInicio": "2023-08-01",
+  "dataPrevisaoFim": "2023-12-01",
+  "descricao": "Descrição detalhada do projeto",
+  "orcamento": 150000.0,
+  "risco": "BAIXO",
+  "gerente": {
+    "id": 1
+  },
+  "status": "EM_ANALISE"
+}
+
+### Atualizar um projeto
+PUT http://localhost:8080/projetos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Criação de serviços de integração",
+  "descricao": "Descrição atualizada do projeto",
+  "orcamento": 600000,
+  "status": "PLANEJADO",
+  "gerente": {
+    "id": 1
+  }
+}
+
+### Excluir um projeto
+DELETE http://localhost:8080/projetos/2
+Content-Type: application/json
+
+### Obter o risco de um projeto por id
+GET http://localhost:8080/projetos/3/risco
+Content-Type: application/json
+
+### Adicionar um membro
+POST http://localhost:8080/projetos/3/membros
+Content-Type: application/json
+
+{
+  "pessoaId": 123
+}
+
+### PESSOAS
+
+### Recuperar todas as pessoas
+POST http://localhost:8080/membros
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "funcao": "Desenvolvedor",
+  "atribuicao": "funcionario"
+}
